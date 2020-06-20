@@ -3,6 +3,7 @@ import { combustivel } from '../containers/combustivel/store';
 import { router } from './router.store';
 import { starWars } from '../containers/star-wars/stores';
 import { starWarsDetails } from '../containers/star-wars-details/store';
+import { cache } from '../containers/cache/store';
 
 export {
   router,
@@ -10,4 +11,5 @@ export {
   home,
   starWars,
   starWarsDetails,
+  cache
 }
