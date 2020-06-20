@@ -1,6 +1,7 @@
 import './index.css';
 import 'semantic-ui-css/semantic.min.css'
 import './plugins/sentry.plugin';
+import './apis/axios.api';
 
 import * as serviceWorker from './serviceWorker';
 import * as store from './mobx';
@@ -14,7 +15,6 @@ import { createBrowserHistory } from 'history';
 import { router } from './mobx';
 import { syncHistoryWithStore } from 'mobx-react-router';
 import Loading from './components/loading/index';
-import './apis/axios.api';
 
 const rootElement = document.getElementById('root');
 const browserHistory = createBrowserHistory();
