@@ -60,13 +60,13 @@ export default class Login extends React.Component<Props> {
               <Segment color='green'>
 
                 <Form.Field>
-                  <label>E-Mail:</label>
+                 
                   <Input
                     name='email'
                     minLength={3}
                     maxLength={50}
                     className={'uppercase'}
-                    placeholder='ex: jr_acn@yahoo.com.br'
+                    placeholder='E-mail'
                     value={email}
                     type='email'
                     icon='user'
@@ -76,12 +76,12 @@ export default class Login extends React.Component<Props> {
                 </Form.Field>
 
                 <Form.Field>
-                  <label>Senha</label>
+                 
                   <Input
                     type='password'
                     name='password'
                     value={password}
-                    placeholder='EX: 123'
+                    placeholder='Senha'
                     onChange={handleForm}
                     icon='lock'
                     iconPosition={'left'}
