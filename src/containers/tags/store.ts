@@ -36,6 +36,16 @@ export default class TagsStore {
     throw new Error('not suported');
   }
 
+  @action stopStream = () =>{
+    try {
+      const mediaControl = document.querySelector('video#webcam') as any;
+      mediaControl.srcObject = null;
+      
+    } catch (error) {
+      swal.fire(error.message, '','error');
+    }
+  }
+
   @action getStream = async (type) => {
     const constraints = {};
     constraints[type] = true;

@@ -42,15 +42,15 @@ export default class Cache extends React.Component<Props>{
           <Form.Group widths='equal'>
             <Form.Field>
               <label>Local Storage</label>
-              <input value={local || ''} name='local' onChange={handleForm} placeholder='Batata' required />
+              <input value={local || ''} name='local' onChange={handleForm} placeholder='Local Storage' required />
             </Form.Field>
             <Form.Field>
               <label>Session Storage</label>
-              <input value={session || ''} name='session' onChange={handleForm} placeholder='Maça' required />
+              <input value={session || ''} name='session' onChange={handleForm} placeholder='Session Storage' required />
             </Form.Field>
             <Form.Field>
               <label>Cookie</label>
-              <input value={cookie || ''} name='cookie' onChange={handleForm} placeholder='Beterraba' required />
+              <input value={cookie || ''} name='cookie' onChange={handleForm} placeholder='Cookie' required />
             </Form.Field>
           </Form.Group>
           <Button type='submit'>Armazenar</Button>

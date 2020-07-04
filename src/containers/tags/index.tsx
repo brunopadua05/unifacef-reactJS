@@ -15,7 +15,7 @@ export default class Tags extends React.Component<Props> {
 
   render() {
 
-    const { image, video, getLocationGPS, geoLocale, getStream } = this.props.tags;
+    const { image, video, getLocationGPS, geoLocale, getStream, stopStream } = this.props.tags;
 
     return (
       <Container>
@@ -56,11 +56,12 @@ export default class Tags extends React.Component<Props> {
           </Form.Group>
           <Form.Group widths='equal'>
             <Form.Field>
-              <p><button type="button" onClick={() => getStream('video')}>Ativar Web Cam</button></p>
               <video id='webcam' controls autoPlay={true} style={{ height: '180px', width: '240px' }}></video>
+              <p><button type="button" onClick={() => getStream('video')}>Ativar Web Cam</button></p>
+              <p><button type="button" onClick={() => stopStream()}>Desativar Web Cam</button></p>
             </Form.Field>
           </Form.Group>
-        </Form>
+        </Form> 
       </Container >
     );
   }
